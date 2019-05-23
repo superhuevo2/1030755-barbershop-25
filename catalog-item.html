@@ -3,49 +3,54 @@
   <head>
     <meta charset='utf-8'>
     <title>Набор для путешествий «Baxter of California»</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href='css/normalize.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
   </head>
-  <body>
+  <body class='inner-page'>
     <header class='main-header'>
       <nav class='main-navigation'>
-        <a href='index.html'>
-          <img src='img/catalog-item/logo.svg' width='' heigth='' alt='Барбершоп Бородинский'>
+        <a class='catalog-logo' href='index.html'>
+          <img src='img/logo-small.svg' width='111' height='24' alt='Логотип барбершопа Бородинский'>
         </a>
-        <ul class='navigation-list'>
+        <ul class='site-navigation'>
           <li><a href='info.html'>Информация</a></li>
-          <li><a href='news.html'>Информация</a></li>
-          <li><a href='price.html'>Информация</a></li>
-          <li><a href='catalog.html'>Информация</a></li>
-          <li><a href='contacts.html'>Информация</a></li>
+          <li><a href='news.html'>Новости</a></li>
+          <li><a href='price.html'>Прайс-лист</a></li>
+          <li class='site-navigation-current'><a href="catalog.html">Магазин</a></li>
+          <li><a href='contacts'>Контакты</a></li>
         </ul>
         <ul class='user-navigation'>
-          <li class='login-link'>Вход</li>
+          <li><a class='login-link' href='login.html'>Вход</a></li>
         </ul>
       </nav>
     </header>
     <main class='container'>
-      <h1>набор для путешествий «Baxter of California»</h1>
+      <h1 class='page-title'>набор для путешествий «Baxter of California»</h1>
       <ul class='breadcrumbs'>
         <li><a href='index.html'>Главная</a></li>
-        <li><a href='catalog.html'>Главная</a></li>
-        <li><a href='care-products.html'>Главная</a></li>
-        <li class='breadcrumbs-item'>Набор для путешествий «Baxter of California»</li>
+        <li><a href='catalog.html'>Каталог</a></li>
+        <li><a href='care-products.html'>Средства для ухода</a></li>
+        <li class='breadcrumbs-current'>Набор для путешествий «Baxter of California»</li>
       </ul>
     
     <section class='gallery'>
       <h2 class='visually-hidden'>Изображение товара</h2>
-      <p class='gallery-main'>
-        <a href='#'><img src='baxter-of-california-1.jpg' width='460' height='498' alt='Фото всего набора'></a>
+      <p class='product-preview-full'>
+        <a href='#'><img src='../img/product-1-big.jpg' width='460' height='498' alt='Фото всего набора'></a>
       </p>
-      <ul class='gallery-list'>
-        <li><img src='foto-1.jpg' width='140' height='149' alt='Фото части товара'></li>
-        <li><img src='foto-2.jpg' width='140' height='149' alt='Фото части товара'></li>
-        <li><img src='foto-3.jpg' width='140' height='149' alt='Фото части товара'></li>
+      <ul class='product-preview-list'>
+        <li><img src='../img/product-1-small-1.jpg' width='140' height='149' alt='Фото части товара'></li>
+        <li><img src='../img/product-1-small-2.jpg' width='140' height='149' alt='Фото части товара'></li>
+        <li><img src='../img/product-1-small-3.jpg' width='140' height='149' alt='Фото части товара'></li>
       </ul>
     </section>
-    <section class='product-information'>
+    <section class='product-info'>
       <h2 class='visually-hidden'> Информация о товаре</h2>
-      <p>Есть в наличии</p>
-      <p class='product-art'>Артикул: Dexter-AE</p>
+      <div class='product-description'>
+        <p class='product-aviability'>Есть в наличии</p>
+        <p class='product-article'>Артикул: Dexter-AE</p>
+      </div>
       <p>
         Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
       </p>
@@ -53,8 +58,8 @@
         <b>2900 P</b>
         <a href='#' class='button'>Купить</a>
       </p>
+      <h3>В набор входит:</h3>             <!-- заголовок и список в один контейнер надо? -->
       <ul class='product-set-list'>
-        <h3>В набор входит:</h3>
         <li class='product-set-item'>Средство для умывания (50мл)</li>
         <li class='product-set-item'>Увлажняющий крем (50мл)</li>
         <li class='product-set-item'>Крем до бритья (50мл)</li>

@@ -3,6 +3,9 @@
   <head>
     <meta charset='utf-8'>
     <title>HTML Academy: Барбершоп</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href='css/normalize.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
   </head>
   <body>
     <header class='main-header'>
@@ -46,68 +49,72 @@
           </li>
         </ul>
       </section>
-      <section class='news'>
-        <h2>Новости</h2>
-        <ul class='news-list'>
-          <li>
-            <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
-            <time datetime="2016-01-11">11 января</time>
-          </li>
-          <li>
-            <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
-            <time datetime="2016-01-18">18 января</time>
-          </li>
-        </ul>
-        <span class='button'><a href='#'>ВСЕ НОВОСТИ</a></span>
-      </section>
-      <section class='gallery'>
-        <h2> ФОТОГАЛЕРЕЯ</h2>
-        <figure class='gallery-main'>
-          <a href='#'>
-            <img src='img/studio.jpg' width='286' height='164' alt='Интерьер'>
-          </a>
-        </figure>
-        <button class='button gallery-button gallery-button-back' type='button'>НАЗАД</button>
-        <button class='button gallery-button gallery-button-next' type='button'>ВПЕРЕД</button>
-      </section>
-      <section class='contact'>
-        <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
-        <p class='contact-inf'>
-          БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-          АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
-          ТЕЛЕФОН: +7 (495) 666-02-66
-        </p>
-        <p class='contact-time'>
-          ВРЕМЯ РАБОТЫ:<br> 
-          ПН—ПТ: С <time>10:00</time> ДО <time>22:00</time><br>
-          СБ—ВС: С <time>10:00</time> ДО <time>19:00</time> 
-        </p>
-        <span class='button'><a href='map.html'>КАК ПРОЕХАТЬ</a></span>
-        <span class='button'><a href='contacts.html'>ОБРАТНАЯ СВЯЗЬ</a></span>
-      </section>
-      <section class='appointment'>
-        <h2>ЗАПИСАТЬСЯ</h2>
-        <p class='appointment-main'>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-        <form class='appointment-form' action='https://echo.htmlacademy.ru' method='post'>
-          <p class='appointment-item'>
-            <label for='appointment-date'>Дата</label>
-            <input type='text' name='appointment-date' id='appointment-date' placeholder='08.11.2017'>
+        <div class='index-columns'>
+        <section class='news'>
+          <h2>Новости</h2>
+          <ul class='news-list'>
+            <li>
+              <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+              <time datetime="2016-01-11">11 января</time>
+            </li>
+            <li>
+              <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+              <time datetime="2016-01-18">18 января</time>
+            </li>
+          </ul>
+          <a class='button' href='#'>ВСЕ НОВОСТИ</a>
+        </section>
+        <section class='gallery'>
+          <h2> ФОТОГАЛЕРЕЯ</h2>
+          <figure class='gallery-main'>
+            <a href='#'>
+              <img src='img/studio.jpg' width='286' height='164' alt='Интерьер'>
+            </a>
+          </figure>
+          <button class='button gallery-button gallery-button-back' type='button'>НАЗАД</button>
+          <button class='button gallery-button gallery-button-next' type='button'>ВПЕРЕД</button>
+        </section>
+      </div>
+      <div class='index-columns'>
+        <section class='contact'>
+          <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+          <p class='contact-inf'>
+            БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+            АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+            ТЕЛЕФОН: +7 (495) 666-02-66
           </p>
-          <p class='appointment-item'>
-            <label for='appointment-time'>Время</label>
-            <input type='text' name='appointment-time' id='appointment-time' placeholder='10:00'>
+          <p class='contact-time'>
+            ВРЕМЯ РАБОТЫ:<br> 
+            ПН—ПТ: С <time>10:00</time> ДО <time>22:00</time><br>
+            СБ—ВС: С <time>10:00</time> ДО <time>19:00</time> 
           </p>
-          <p class='appointment-item'>
-            <label for='appointment-name'>Ваше имя</label>
-            <input type='text' name='appointment-name' id='appointment-name' placeholder='Борода'>
-          </p>
-          <p class='appointment-item'>
-            <label for='appointment-phone'>Телефон</label>
-            <input type='tel' name='appointment-phone' id='appointment-phone' placeholder='+7 123 -456-78-90'>
-          </p>
-           <button class='button' type='submit'>Отправить</button>
-        </form>
-      </section>
+          <a class='button' href='map.html'>КАК ПРОЕХАТЬ</a>
+          <a class='button' href='contacts.html'>ОБРАТНАЯ СВЯЗЬ</a>
+        </section>
+        <section class='appointment'>
+          <h2>ЗАПИСАТЬСЯ</h2>
+          <p class='appointment-main'>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+          <form class='appointment-form' action='https://echo.htmlacademy.ru' method='post'>
+            <p class='appointment-item'>
+              <label for='appointment-date'>Дата</label>
+              <input type='text' name='appointment-date' id='appointment-date' placeholder='08.11.2017'>
+            </p>
+            <p class='appointment-item'>
+              <label for='appointment-time'>Время</label>
+              <input type='text' name='appointment-time' id='appointment-time' placeholder='10:00'>
+            </p>
+            <p class='appointment-item'>
+              <label for='appointment-name'>Ваше имя</label>
+              <input type='text' name='appointment-name' id='appointment-name' placeholder='Борода'>
+            </p>
+            <p class='appointment-item'>
+              <label for='appointment-phone'>Телефон</label>
+              <input type='tel' name='appointment-phone' id='appointment-phone' placeholder='+7 123 -456-78-90'>
+            </p>
+             <button class='button' type='submit'>Отправить</button>
+          </form>
+        </section>
+      </div>
     </main>
     <footer class='main-footer'>
       <p class='footer-contacts'>
@@ -141,15 +148,18 @@
         <label class='visually-hidden' for='login-password'>Пароль</label>
         <input class='login-icon-password' type='password' name='password' id='login-password' placeholder='Пароль'>
         <p class='login-password-info'>
-          <label for='remember-me'>Запомните меня</label>
-          <input class='login-remember-me' type='checkbox' name='remember-me' id='remember-me'>
+          <label class='login-checkbox' for='remember-me'>
+            <input class='checkbox' type='checkbox' name='remember-me' id='remember-me'>
+            <span class='checkbox-indicator'></span>
+            Запомните меня
+          </label>
         </p>
         <button class='button' type='submit'>Войти</button>
       </form>
       <a class='restore' href='#'>Я забыл пароль!</a>
       <button class='modal-close' type='button'>Закрыть</button>
     </section>
-    <section class='map'>
+    <section class='modal modal-map'>
       <h2 class='visually-hidden'>Как до нас добраться</h2>
       <p>
         <img src='img/map.jpg' width='750' height='560' alt='Офис компании по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург'>
