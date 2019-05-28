@@ -9,7 +9,7 @@
   </head>
   <body class='inner-page'>
     <header class='main-header'>
-      <nav class='main-navigation'>
+      <nav class='main-navigation container'>
         <a class='catalog-logo' href='index.html'>
           <img src='img/logo-small.svg' width='111' height='24' alt='Логотип барбершопа Бородинский'>
         </a>
@@ -33,67 +33,90 @@
         <li><a href='care-products.html'>Средства для ухода</a></li>
         <li class='breadcrumbs-current'>Набор для путешествий «Baxter of California»</li>
       </ul>
-    
-    <section class='gallery'>
-      <h2 class='visually-hidden'>Изображение товара</h2>
-      <p class='product-preview-full'>
-        <a href='#'><img src='../img/product-1-big.jpg' width='460' height='498' alt='Фото всего набора'></a>
-      </p>
-      <ul class='product-preview-list'>
-        <li><img src='../img/product-1-small-1.jpg' width='140' height='149' alt='Фото части товара'></li>
-        <li><img src='../img/product-1-small-2.jpg' width='140' height='149' alt='Фото части товара'></li>
-        <li><img src='../img/product-1-small-3.jpg' width='140' height='149' alt='Фото части товара'></li>
-      </ul>
-    </section>
-    <section class='product-info'>
-      <h2 class='visually-hidden'> Информация о товаре</h2>
-      <div class='product-description'>
-        <p class='product-aviability'>Есть в наличии</p>
-        <p class='product-article'>Артикул: Dexter-AE</p>
+      <div class='catalog-columns'>
+        <section class='item-gallery'>
+          <h2 class='visually-hidden'>Изображение товара</h2>
+          <p class='product-preview-full'>
+            <a href='#'><img src='../img/product-1-big.jpg' width='460' height='498' alt='Фото всего набора'></a>
+          </p>
+          <ul class='product-preview-list'>
+            <li><img src='../img/product-1-small-1.jpg' width='140' height='149' alt='Фото части товара'></li>
+            <li><img src='../img/product-1-small-2.jpg' width='140' height='149' alt='Фото части товара'></li>
+            <li><img src='../img/product-1-small-3.jpg' width='140' height='149' alt='Фото части товара'></li>
+          </ul>
+        </section>
+        <section class='product-info'>
+          <h2 class='visually-hidden'> Информация о товаре</h2>
+          <div class='product-description'>
+            <p class='product-aviability'>Есть в наличии</p>
+            <p class='product-article'>Артикул: Dexter-AE</p>
+          </div>
+          <p>
+            Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
+          </p>
+          <p class='product-price'>
+            <b>2900 P</b>
+            <a href='#' class='button'>Купить</a>
+          </p>
+          <h3>В набор входит:</h3>             <!-- заголовок и список в один контейнер надо? -->
+          <ul class='product-set-list'>
+            <li class='product-set-item'>Средство для умывания (50мл)</li>
+            <li class='product-set-item'>Увлажняющий крем (50мл)</li>
+            <li class='product-set-item'>Крем до бритья (50мл)</li>
+            <li class='product-set-item'>Крем после бритья (50мл)</li>
+            <li class='product-set-item'>Удобная кожаная косметичка</li>
+          </ul>
+        </section>
       </div>
-      <p>
-        Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
-      </p>
-      <p class='product-price'>
-        <b>2900 P</b>
-        <a href='#' class='button'>Купить</a>
-      </p>
-      <h3>В набор входит:</h3>             <!-- заголовок и список в один контейнер надо? -->
-      <ul class='product-set-list'>
-        <li class='product-set-item'>Средство для умывания (50мл)</li>
-        <li class='product-set-item'>Увлажняющий крем (50мл)</li>
-        <li class='product-set-item'>Крем до бритья (50мл)</li>
-        <li class='product-set-item'>Крем после бритья (50мл)</li>
-        <li class='product-set-item'>Удобная кожаная косметичка</li>
-      </ul>
-    </section>
     </main>
     <footer class='main-footer'>
-      <p class='contacts'>
-        БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-        АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-        <a href='contacts'>КАК НАС НАЙТИ?</a><br>
-        ТЕЛЕФОН: +7 (495) 666-02-66
-      </p>
-      <div class='socials'>
-        <span>Давайте дружить!</span>
-        <ul>
-          <li><a class='social-button' href='#'>Вконтакте</a></li>
-          <li><a class='social-button' href='#'>Фейсбук</a></li>
-          <li><a class='social-button' href='#'>Твиттер</a></li>
-        </ul>
+      <div class='container'>
+        <p class='footer-contacts'>
+          БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+          АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
+          <a href='contacts'>КАК НАС НАЙТИ?</a><br>
+          ТЕЛЕФОН: +7 (495) 666-02-66
+        </p>
+        <div class='footer-socials'>
+          <span>Давайте дружить!</span>
+          <ul>
+            <li><a class='social-button' href='#'>Вконтакте</a></li>
+            <li><a class='social-button' href='#'>Фейсбук</a></li>
+            <li><a class='social-button' href='#'>Твиттер</a></li>
+          </ul>
+        </div>
+        <p class='footer-copyright'>
+          Разработано:<br>
+          <a class='button' href='https://www.htmlacademy.ru'>HTML-академия</a>
+        </p>
       </div>
-      <p class='copyright'>
-        Разработано:<br>
-        <a class='button' href='https://www.htmlacademy.ru'>HTML-академия</a>
-      </p>
     </footer>
     <section class='modal modal-login'>
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль</p>
-      <span class='modal-close'>X</span>
-      <!-- Форма для ввода-->
+        <form class='login' action='https://echo.htmlacademy.ru' method='post'>
+          <p>
+            <label class='visually-hidden' for='user'>
+              Логин
+            </label>
+            <input class='login-user' type='text' name='user' id='user' placeholder='Логин'>
+          </p>
+          <p>
+            <label class='visually-hidden' for='password'>
+              Пароль
+            </label>
+            <input class='login-password' type='password' name='password' id='password' placeholder='Пароль'>
+          </p>
+          <p>
+            <label for='remember-me'>
+              Запомните меня
+            </label>
+            <input class='remember' type='checkbox' name='remember-me' id='remember-me'>
+          </p>
+          <button class='button button-login' type='submit'>Войти</button>
+        </form>
+        <a class='restore' href='#'>Я забыл свой пароль!</a> 
+      <button class='modal-close' type='button'>Закрыть</button>
     </section>
-    
   </body>
 </html>
